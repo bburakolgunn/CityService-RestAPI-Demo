@@ -2,14 +2,15 @@ package RestAPI.demo.repository;
 
 import RestAPI.demo.entity.Sehir;
 
-import org.springframework.data.mongodb.repository.MongoRepository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-
-public interface SehirRepository extends MongoRepository<Sehir,String> {
+@Repository
+public interface SehirRepository extends JpaRepository<Sehir,String> {
 
 
     List<Sehir> findByName(String name);
