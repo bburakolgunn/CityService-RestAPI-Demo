@@ -8,4 +8,4 @@ services:
     ports:
       - 5432:5432
     environment:
-      POSTGRES_PASSWORD: 987654
+      POSTGRES_PASSWORD: Şifreyi kendiniz belirle.
